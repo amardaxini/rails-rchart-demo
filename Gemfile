@@ -26,8 +26,9 @@ gem 'rchart'
 group :development do
 gem 'pry'
 gem 'sqlite3'
-end
 gem 'thin'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
