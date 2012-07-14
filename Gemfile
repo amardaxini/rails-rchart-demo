@@ -19,14 +19,14 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'thin'
 gem 'jquery-rails'
 gem 'gd2-ffij'
 gem 'rchart'
 group :development do
 gem 'pry'
 gem 'sqlite3'
-gem 'thin'
+
 end
 
 # To use ActiveModel has_secure_password
