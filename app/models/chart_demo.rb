@@ -25,7 +25,12 @@ class ChartDemo
     
   end
   def self.render_graph(chart)
-    file_name="/tmp/#{Time.now.strftime('%s')}.png"
+    #    For Heroku
+    if Rails.env == "production"
+      file_name="./tmp/#{Time.now.strftime('%s')}.png"
+    else
+      file_name="/tmp/#{Time.now.strftime('%s')}.png"
+    end
     chart.export_image(file_name)
     file_name
   end
